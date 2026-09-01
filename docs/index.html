@@ -85,7 +85,7 @@
   <div class="wrap">
     <div class="brand">日后 / Afterwise</div>
     <h1 id="page-title">隐私政策</h1>
-    <p class="meta" id="page-updated">更新日期：2026-07-24</p>
+    <p class="meta" id="page-updated">更新日期：2026-09-01</p>
 
     <div class="lang">
       <a href="#zh" onclick="showLang('zh'); return false;">中文</a>
@@ -94,82 +94,112 @@
 
     <div class="card section active" id="zh">
       <h2>引言</h2>
-      <p>欢迎使用「日后」（Afterwise）。我们重视你的隐私。本政策说明本应用如何处理与隐私相关的信息。</p>
+      <p>欢迎使用「日后」（Afterwise）。我们重视你的隐私。本政策说明本应用如何处理与隐私相关的信息，并与当前版本（含复盘日历、可选系统日历同步、匿名产品分析等）保持一致。</p>
 
-      <h2>1. 我们收集哪些信息</h2>
+      <h2>1. 我们处理哪些信息</h2>
       <ul>
-        <li><strong>你创建的内容</strong>：决策、选项、理由、复盘结果、标签等，保存在你的设备本地，并可通过 Apple iCloud 在你自己的设备之间同步。</li>
-        <li><strong>我们不运营自建业务服务器</strong>来存储你的日记内容，因此开发者无法像传统账号系统那样在自有后台查看你的决策正文。</li>
+        <li><strong>你创建的内容</strong>：决策、选项、理由、密封信、复盘结果、标签、附图等，保存在你的设备本地，并可通过 Apple iCloud 在你自己的设备之间同步。</li>
+        <li><strong>我们不运营自建业务服务器</strong>来存储你的日记正文，因此开发者无法像传统账号系统那样在自有后台查看你的决定全文或密封信内容。</li>
         <li><strong>订阅与支付</strong>：由 Apple App Store / StoreKit 处理。我们无法获取你的完整银行卡等支付敏感信息。</li>
+        <li><strong>匿名产品分析</strong>：为了解功能使用情况、改进产品，应用会使用 Firebase Analytics（Google）收集<strong>匿名、汇总</strong>的使用事件（例如打开某页面、完成复盘、点击模板、是否开启日历同步等）。此类事件<strong>不包含</strong>决定标题、理由、密封信正文、附图或可识别你身份的账号信息。分析默认开启；App 内不提供单独关闭开关。你可通过停止使用本应用，或在系统层面限制相关数据共享（若设备/系统提供相应选项）来减少此类收集。</li>
         <li><strong>诊断信息（如有）</strong>：若你通过系统向 Apple 或开发者反馈崩溃等问题，可能包含设备型号、系统版本等技术信息，仅用于排查问题。</li>
       </ul>
 
       <h2>2. 信息如何使用</h2>
-      <p>上述信息仅用于提供产品功能，包括：记录与复盘、本地提醒、跨设备同步、导出、小组件与系统搜索等。我们不会出售你的个人内容。</p>
+      <p>上述信息用于提供与改进产品功能，包括：记录与复盘、本地提醒、跨设备同步、导出、小组件、系统搜索、可选的系统日历同步，以及匿名产品分析。我们不会出售你的个人内容，也不会将密封信或理由正文用于广告定向。</p>
 
       <h2>3. 权限说明</h2>
       <ul>
-        <li><strong>通知</strong>：用于在约定的复盘日提醒你回看决定。你可以随时在系统设置中关闭。</li>
+        <li><strong>通知</strong>：用于在约定的复盘日提醒你回看决定。可随时在系统设置中关闭。</li>
+        <li><strong>日历</strong>（可选）：仅在你开启「同步到系统日历」并授权后，才会将<strong>未完成复盘计划</strong>写入系统日历（默认写入名为「日后」的日历，你也可选择其他可写日历）。事件通常包含决定标题与复盘周期类说明，<strong>不含</strong>密封信正文、理由全文或附图。关闭同步后，本应用可清理由其写入的相关事件。可随时在系统设置中撤销日历权限。</li>
+        <li><strong>相册</strong>（可选）：当你选择将隐私分享卡等图片「保存到相册」时使用。分享卡默认隐藏决定标题，且默认不含密封信/理由正文；是否展示标题由你在导出前自行选择。</li>
+        <li><strong>语音识别 / 听写</strong>（如你使用）：用于辅助输入密封信等内容，按系统能力在设备侧或系统服务中处理，本应用不会把听写内容上传到自建服务器。</li>
+        <li><strong>面容 ID / 密码</strong>（Pro 可选）：仅用于本地应用锁，生物特征数据由系统保管，本应用无法读取。</li>
       </ul>
 
       <h2>4. 第三方服务</h2>
-      <p>本应用依赖 Apple 提供的能力与服务，例如：App Store、StoreKit、iCloud / CloudKit、系统通知、Spotlight、小组件与快捷指令等。这些服务受 Apple 相关政策约束。</p>
+      <ul>
+        <li><strong>Apple</strong>：App Store、StoreKit、iCloud / CloudKit、系统通知、日历（EventKit）、Spotlight、小组件、快捷指令、听写等，受 Apple 相关政策约束。</li>
+        <li><strong>Google Firebase Analytics</strong>：用于第 1 节所述匿名产品分析。相关处理还受 Google 隐私政策约束。我们配置为不将分析用于广告个性化追踪（不以 IDFA 做跨 App 广告追踪为目的）。</li>
+      </ul>
 
-      <h2>5. 数据存储、同步与删除</h2>
+      <h2>5. 小组件与分享</h2>
+      <ul>
+        <li><strong>复盘日历等小组件</strong>：展示复盘日、数量或倒计时类摘要，<strong>不展示</strong>决定标题或密封信内容。</li>
+        <li><strong>隐私分享卡</strong>：由你主动生成；默认不包含密封信全文、理由、预期与附图。</li>
+      </ul>
+
+      <h2>6. 数据存储、同步与删除</h2>
       <ul>
         <li>内容默认存储在你的设备；开启 iCloud 后，同步至你的 Apple 账户对应的 iCloud 私有数据。</li>
         <li>你可以在 App 内删除记录；也可通过删除 App、管理 iCloud 存储等方式移除相关数据。</li>
         <li>取消订阅请在 Apple ID 的订阅管理中操作。</li>
+        <li>匿名分析数据按分析服务商的保留策略处理，通常为汇总统计，无法用于还原你的日记正文。</li>
       </ul>
 
-      <h2>6. 儿童隐私</h2>
+      <h2>7. 儿童隐私</h2>
       <p>本应用不面向 13 岁以下儿童设计，也不会有意收集儿童的个人信息。</p>
 
-      <h2>7. 政策更新</h2>
+      <h2>8. 政策更新</h2>
       <p>我们可能适时更新本政策。更新后会在本页面调整「更新日期」。继续使用即表示你知悉更新后的内容。</p>
 
-      <h2>8. 联系我们</h2>
+      <h2>9. 联系我们</h2>
       <p>如对本隐私政策有疑问，请通过邮件联系：</p>
       <p><a href="mailto:mapleleaf99@126.com">mapleleaf99@126.com</a></p>
     </div>
 
     <div class="card section" id="en">
       <h2>Introduction</h2>
-      <p>Welcome to Afterwise (“日后”). We respect your privacy. This policy explains how the app handles privacy-related information.</p>
+      <p>Welcome to Afterwise (“日后”). We respect your privacy. This policy explains how the app handles privacy-related information and reflects the current product (including review calendar, optional system calendar sync, and anonymous product analytics).</p>
 
       <h2>1. Information We Handle</h2>
       <ul>
-        <li><strong>Content you create</strong>: decisions, options, reasons, review results, tags, and similar data are stored on your device and may sync across your devices via Apple iCloud.</li>
-        <li><strong>No self-operated content server</strong>: we do not run our own backend to store your journal content, so we cannot browse your decision text on a private server like a traditional account system.</li>
-        <li><strong>Subscriptions & payments</strong>: processed by the Apple App Store / StoreKit. We do not receive your full payment card details.</li>
+        <li><strong>Content you create</strong>: decisions, options, reasons, sealed letters, review results, tags, attachments, and similar data are stored on your device and may sync across your devices via Apple iCloud.</li>
+        <li><strong>No self-operated content server</strong>: we do not run our own backend to store your journal text, so we cannot browse your decision bodies or sealed letters on a private server like a traditional account system.</li>
+        <li><strong>Subscriptions &amp; payments</strong>: processed by the Apple App Store / StoreKit. We do not receive your full payment card details.</li>
+        <li><strong>Anonymous product analytics</strong>: to understand feature usage and improve the product, the app uses Firebase Analytics (Google) to collect <strong>anonymous, aggregated</strong> usage events (for example opening a screen, completing a review, tapping a template, or toggling calendar sync). These events <strong>do not include</strong> decision titles, reasons, sealed-letter text, images, or account credentials. Analytics is enabled by default; the app does not provide a separate in-app off switch. You may reduce such collection by stopping use of the app or using any applicable system-level controls.</li>
         <li><strong>Diagnostics (if any)</strong>: crash or feedback reports may include technical details such as device model and OS version, used only for troubleshooting.</li>
       </ul>
 
       <h2>2. How Information Is Used</h2>
-      <p>Information is used solely to provide product features such as logging and review, local reminders, cross-device sync, export, widgets, and system search. We do not sell your personal content.</p>
+      <p>Information is used to provide and improve product features such as logging and review, local reminders, cross-device sync, export, widgets, system search, optional system calendar sync, and anonymous product analytics. We do not sell your personal content, and we do not use sealed-letter or reason text for advertising targeting.</p>
 
       <h2>3. Permissions</h2>
       <ul>
         <li><strong>Notifications</strong>: used to remind you to review decisions on scheduled dates. You can turn this off in system settings at any time.</li>
+        <li><strong>Calendar</strong> (optional): only after you enable “Sync to Calendar” and grant access will the app write <strong>incomplete review plans</strong> to the system calendar (by default a calendar named “Afterwise”; you may choose another writable calendar). Events typically include the decision title and review-cycle labels, and <strong>do not include</strong> sealed-letter bodies, full reasons, or images. Turning sync off allows the app to remove events it wrote. You can revoke calendar access in system settings at any time.</li>
+        <li><strong>Photos</strong> (optional): used when you choose to save a privacy share card (or similar image) to your library. Share cards hide the decision title by default and exclude sealed-letter/reason bodies by default; showing the title is your choice before export.</li>
+        <li><strong>Speech recognition / dictation</strong> (if you use it): helps you enter sealed-letter content and is handled by system capabilities; the app does not upload dictation text to a self-operated server.</li>
+        <li><strong>Face ID / device passcode</strong> (optional Pro): used only for an on-device app lock. Biometric data stays with the system; the app cannot read it.</li>
       </ul>
 
       <h2>4. Third-Party Services</h2>
-      <p>The app relies on Apple services and frameworks, including the App Store, StoreKit, iCloud / CloudKit, system notifications, Spotlight, widgets, and App Shortcuts. Those services are governed by Apple’s policies.</p>
+      <ul>
+        <li><strong>Apple</strong>: App Store, StoreKit, iCloud / CloudKit, notifications, Calendar (EventKit), Spotlight, widgets, App Shortcuts, dictation, and related frameworks, governed by Apple’s policies.</li>
+        <li><strong>Google Firebase Analytics</strong>: used for the anonymous product analytics described above, also subject to Google’s privacy policy. We do not use analytics for cross-app advertising tracking via IDFA.</li>
+      </ul>
 
-      <h2>5. Storage, Sync, and Deletion</h2>
+      <h2>5. Widgets and Sharing</h2>
+      <ul>
+        <li><strong>Review calendar widgets</strong>: show review dates, counts, or countdown-style summaries, and <strong>do not show</strong> decision titles or sealed-letter content.</li>
+        <li><strong>Privacy share cards</strong>: generated only when you choose; by default they exclude sealed-letter full text, reasons, expectations, and images.</li>
+      </ul>
+
+      <h2>6. Storage, Sync, and Deletion</h2>
       <ul>
         <li>Content is stored on your device by default; with iCloud enabled, it syncs to private iCloud data associated with your Apple ID.</li>
         <li>You may delete records in the app, or remove related data by deleting the app / managing iCloud storage.</li>
         <li>To cancel a subscription, manage it in your Apple ID subscription settings.</li>
+        <li>Anonymous analytics data is retained according to the analytics provider’s policies and is typically aggregated, not usable to reconstruct your journal text.</li>
       </ul>
 
-      <h2>6. Children’s Privacy</h2>
+      <h2>7. Children’s Privacy</h2>
       <p>The app is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
 
-      <h2>7. Changes</h2>
+      <h2>8. Changes</h2>
       <p>We may update this policy from time to time. The “Last updated” date on this page will be revised accordingly.</p>
 
-      <h2>8. Contact</h2>
+      <h2>9. Contact</h2>
       <p>For privacy questions, contact:</p>
       <p><a href="mailto:mapleleaf99@126.com">mapleleaf99@126.com</a></p>
     </div>
@@ -185,11 +215,11 @@
       document.getElementById(lang).classList.add('active');
       if (lang === 'en') {
         document.getElementById('page-title').textContent = 'Privacy Policy';
-        document.getElementById('page-updated').textContent = 'Last updated: July 24, 2026';
+        document.getElementById('page-updated').textContent = 'Last updated: September 1, 2026';
         document.documentElement.lang = 'en';
       } else {
         document.getElementById('page-title').textContent = '隐私政策';
-        document.getElementById('page-updated').textContent = '更新日期：2026-07-24';
+        document.getElementById('page-updated').textContent = '更新日期：2026-09-01';
         document.documentElement.lang = 'zh-Hans';
       }
       history.replaceState(null, '', '#' + lang);
